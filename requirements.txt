@@ -1,0 +1,14 @@
+# GUI
+PySide6>=6.5
+
+# Image I/O and the perspective-crop export used for recognition training data
+numpy>=1.24
+opencv-python>=4.8
+
+# Auto-labeling. paddlepaddle is the deep-learning framework paddleocr runs on;
+# install the GPU build instead if you have a CUDA GPU (see README).
+paddlepaddle>=3.0
+paddleocr>=3.0
+
+# The app also runs with paddleocr/paddlepaddle NOT installed -- auto-labeling
+# just becomes unavailable and you fall back to drawing every box by hand.
